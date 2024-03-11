@@ -3,7 +3,7 @@ import PrayerShow from './PrayerShow'
 
 const PrayerList = ({ time }) => {
   return (
-    <div className='flex flex-col lg:flex-row-reverse gap-5 items-center mt-[200px]'>
+    <div className='flex flex-col lg:flex-row-reverse gap-5 items-center mb-[50px] lg:mt-[150px]'>
       <PrayerShow prayer='الفجر' time={time.Fajr} />
       <PrayerShow prayer='الشروق' time={time.Sunrise} />
       <PrayerShow prayer='الظهر' time={time.Dhuhr} />

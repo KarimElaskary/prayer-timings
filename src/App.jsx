@@ -21,14 +21,19 @@ const App = () => {
   }, [city])
 
   return (
-    <div className='flex flex-col items-center gap-[200px]'>
-      <PrayerList time={time} />
-      <SelectCity
-        onSubmit={handleSubmit}
-        city={city}
-        setCity={handleChangeCity}
-      />
-    </div>
+    <>
+        <div className='flex flex-col items-center'>
+          <h1 className='nav-title'>مواقيت الصلاه</h1>
+        </div>
+      <div className='flex flex-col-reverse lg:flex-col items-center gap-[200px]'>
+        <PrayerList time={time} />
+        <SelectCity
+          onSubmit={handleSubmit}
+          city={city}
+          setCity={handleChangeCity}
+        />
+      </div>
+    </>
   )
 }
 

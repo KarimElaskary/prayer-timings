@@ -11,7 +11,7 @@ const SelectCity = ({ onSubmit, city, setCity }) => {
   }
 
   return (
-    <div className='mb-[100px]'>
+    <div className='mt-[100px] lg:mt-0'>
       <form onSubmit={handleFormSubmit}>
         <select value={city} onChange={handleChange}>
           <option value='Cairo'>القاهره</option>
